@@ -26,11 +26,15 @@ The metrics i'm using for this competitions is ofical metric, available in https
 
 ### Model Comparison
 First i start modeling with 3 differents ML models that i use the most:
+
 -Voting Classifier had an accuracy of 65%
+
 -AnomalyDetector had an accuracy of 43%
+
 -AutoML had an accuracy of 83%
 
 The result of AutoML follows below, and although the best result is Ensemble, I choose to use the algorithm xgboost, which I am already used to working:
+
 ![image](https://user-images.githubusercontent.com/74082359/175653368-076aed0d-2d2b-4f70-a395-7878226e11ea.png)
 
 ## Final Model

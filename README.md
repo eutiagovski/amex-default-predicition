@@ -64,3 +64,5 @@ The challenge of this competition was to work with the massive volume of data th
 
 Right now I'm tunning my best model hyperparams to increase my score in this competition.
 
+I thank you fr reading and support so far. Fell free to leave any comments or suggestions on this project.
+

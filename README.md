@@ -13,6 +13,7 @@ The dataset contains aggregated profile features for each customer at each state
 The task is to predict, for each customer_ID, the probability of a future payment default (target = 1).
 
 ## Data Exploring
+More detais of this step can be found at: https://github.com/eutiagovski/amex-default-predicition/blob/main/data-exploring/Amex_Default_Data_Exploring.ipynb
 
 ## Data Pre Processing
 More details of this step can be found at: https://github.com/eutiagovski/amex-default-predicition/blob/main/data-preprocess/Amex_Default_Data_PreProcess.ipynb

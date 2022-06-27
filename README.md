@@ -41,28 +41,37 @@ The metrics i'm using for this competitions is ofical metric, available in https
 ### Comparison
 First i start modeling with 3 differents ML models that i use the most:
 
--Voting Classifier had an accuracy of 65%
-
--AnomalyDetector had an accuracy of 43%
-
--AutoML had an accuracy of 83%
+![image](https://user-images.githubusercontent.com/74082359/175933565-2499cb66-4d4a-4bdd-964d-fe0756bd8423.png)
 
 The result of AutoML follows below, and although the best result is Ensemble, I choose to use the algorithm xgboost, which I am already used to working:
 
 ![image](https://user-images.githubusercontent.com/74082359/175653368-076aed0d-2d2b-4f70-a395-7878226e11ea.png)
 
+
+
 Learning Curves
+What follows below shows us that the selected model had a high ability to adapt to the data
+
 ![image](https://user-images.githubusercontent.com/74082359/175931729-4b30e851-2333-499c-8da2-eec32b8cf732.png)
 
 Top features
+Since we've made features engine, we can perform a validation of the best attributes in search of those that offer the best modeling conditions we need for optimization.
+
 ![image](https://user-images.githubusercontent.com/74082359/175931253-53ed94c8-a8c7-4e53-805d-b911b91dcf02.png)
 
+
 Confusion Matrix
+
+
 ![image](https://user-images.githubusercontent.com/74082359/175931302-c581a9bd-609c-42e7-bd4a-252d26d9cef0.png)
 
 Calibration
+
+
 ![image](https://user-images.githubusercontent.com/74082359/175931510-f6c5c7de-bc38-49ef-83f6-8cfa1a09a329.png)
 
+
+And now we are able to make the first predicts:
 
 ## Predicting
 More details of this step can be found at: https://github.com/eutiagovski/amex-default-predicition/blob/main/final-model/Amex_Default_Final_Model.ipynb

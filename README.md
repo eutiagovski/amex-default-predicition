@@ -50,11 +50,13 @@ The result of AutoML follows below, and although the best result is Ensemble, I 
 
 
 Learning Curves
-What follows below shows us that the selected model had a high ability to adapt to the data
+
+What follows below shows us that the selected model had a high ability to adapt to the data with not too much iterations. We can use this information, and set set that point to save resources. 
 
 ![image](https://user-images.githubusercontent.com/74082359/175931729-4b30e851-2333-499c-8da2-eec32b8cf732.png)
 
 Top features
+
 Since we've made features engine, we can perform a validation of the best attributes in search of those that offer the best modeling conditions we need for optimization.
 
 ![image](https://user-images.githubusercontent.com/74082359/175931253-53ed94c8-a8c7-4e53-805d-b911b91dcf02.png)

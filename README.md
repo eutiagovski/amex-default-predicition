@@ -102,7 +102,7 @@ More details of this step can be found at: https://github.com/eutiagovski/amex-d
 
 Until now, the best model is AutoML with XGBoost and hyperparams i am tunning. This model has an accuracy of 78.1%, wich leaves me at 1314°.
 
-The leaderboard of this competition can be found at: https://www.kaggle.com/competitions/amex-default-prediction/leaderboard#
+The leaderboard of this competition can be found at: https://www.kaggle.com/competitions/amex-default-prediction/leaderboard?search=eutiagovski
 
 More details of this step can be found at: https://github.com/eutiagovski/amex-default-predicition/blob/main/final-model/Amex_Default_Final_Model.ipynb
 

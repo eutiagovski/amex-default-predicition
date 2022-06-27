@@ -1,6 +1,9 @@
 # Amex Default Pedictions Challange
 
 ## Resume
+
+This is my resolution fot the challange propouse in: https://www.kaggle.com/competitions/amex-default-prediction
+
 ### Propouse
 According to Federal Reserve Economic Data, credit card delinquency rates have been increasing since 2016 (sharp decrease in Q1 2020 is due to COVID relief measures).
 ![image](https://user-images.githubusercontent.com/74082359/175775880-9e445da1-2670-4e66-9f2e-250c0dd80bb4.png)

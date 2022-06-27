@@ -98,12 +98,12 @@ More details of this step can be found at: https://github.com/eutiagovski/amex-d
 
 
 ## Predicting
-More details of this step can be found at: https://github.com/eutiagovski/amex-default-predicition/blob/main/final-model/Amex_Default_Final_Model.ipynb
 
 Until now, the best model is AutoML with XGBoost and hyperparams i am tunning. This model has an accuracy of 78.1%, wich leaves me at 1314°.
 
 The leaderboard of this competition can be found at: https://www.kaggle.com/competitions/amex-default-prediction/leaderboard#
 
+More details of this step can be found at: https://github.com/eutiagovski/amex-default-predicition/blob/main/final-model/Amex_Default_Final_Model.ipynb
 
 ## THANK YOU!
 The challenge of this competition was to work with the massive volume of data that was provided. There were more than 50gb of data, divided into more than 900k rows and more than 1k columns. To accomplish this, it took a lot of time researching different attempts and methods for loading the data.

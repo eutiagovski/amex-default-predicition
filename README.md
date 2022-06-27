@@ -58,17 +58,20 @@ What follows below shows us that the selected model had a high ability to adapt 
 Top features
 
 Since we've made features engine, we can perform a validation of the best attributes in search of those that offer the best modeling conditions we need for optimization.
+As we can see, the calculated variables had great importance in the model learning context.
 
 ![image](https://user-images.githubusercontent.com/74082359/175931253-53ed94c8-a8c7-4e53-805d-b911b91dcf02.png)
 
 
 Confusion Matrix
 
-
+The Confusion Matrix is calculated by the Rank search function. It displays the distribution of records in terms of their current classes and their predicted classes. This indicates the quality of the current model. 
+The matrix brings us an interesting conclusion: it is easier for our model to predict a non-default target. So we will be treating this information in the predictions
 ![image](https://user-images.githubusercontent.com/74082359/175931302-c581a9bd-609c-42e7-bd4a-252d26d9cef0.png)
 
 Calibration
 
+Finally, our final optimized model has a calibration curve that closely approximates the ideal model, indicating that the model is perfectly fitted.
 
 ![image](https://user-images.githubusercontent.com/74082359/175931510-f6c5c7de-bc38-49ef-83f6-8cfa1a09a329.png)
 

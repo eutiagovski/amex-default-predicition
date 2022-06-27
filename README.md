@@ -51,6 +51,19 @@ The result of AutoML follows below, and although the best result is Ensemble, I 
 
 ![image](https://user-images.githubusercontent.com/74082359/175653368-076aed0d-2d2b-4f70-a395-7878226e11ea.png)
 
+Learning Curves
+![image](https://user-images.githubusercontent.com/74082359/175931729-4b30e851-2333-499c-8da2-eec32b8cf732.png)
+
+Top features
+![image](https://user-images.githubusercontent.com/74082359/175931253-53ed94c8-a8c7-4e53-805d-b911b91dcf02.png)
+
+Confusion Matrix
+![image](https://user-images.githubusercontent.com/74082359/175931302-c581a9bd-609c-42e7-bd4a-252d26d9cef0.png)
+
+Calibration
+![image](https://user-images.githubusercontent.com/74082359/175931510-f6c5c7de-bc38-49ef-83f6-8cfa1a09a329.png)
+
+
 ## Predicting
 More details of this step can be found at: https://github.com/eutiagovski/amex-default-predicition/blob/main/final-model/Amex_Default_Final_Model.ipynb
 

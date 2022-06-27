@@ -38,6 +38,8 @@ More detais of this step can be found at: https://github.com/eutiagovski/amex-de
 
 In order to reduce even more the size of the datasets, we'll be encoding the customer_id and numericals columns.
 
+In this step, we'll be applying what we've learn in previous section.
+
 To facilitate validation of the initial model, we will be splitting the data into equal parts and training each chunk on a different model and comparing their results.
 
 More details of this step can be found at: https://github.com/eutiagovski/amex-default-predicition/blob/main/data-preprocess/Amex_Default_Data_PreProcess.ipynb

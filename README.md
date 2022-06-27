@@ -25,7 +25,12 @@ We will start by looking for the distribution of target. As we can see,  classes
 ![image](https://user-images.githubusercontent.com/74082359/175775987-a2dd7449-0592-417e-8dac-4320bb2de0c6.png)
 
 In this scenario, we have expenses, payments, balance, risk and delinquency variables distributed in numerical and categorical variables.
-We will be calculating the difference of days between each statement, stating by count how many different statements we have for each unique id.
+
+In this step, we will be looking for patterns, correlations between variables, the amount of missing variables and putting together some theories.
+
+One theory is that the date column is perhaps the most important of all. This is because we have more than one row for each customer_ID, and this leads us to calculate the difference between dates for the same id, and then get a variety of information, such as, the difference in days between each statement, the number of rows each id has related.
+
+And finally we'll be looking for the correlation between these values and the final target variable.
 
 More detais of this step can be found at: https://github.com/eutiagovski/amex-default-predicition/blob/main/data-exploring/Amex_Default_Data_Exploring.ipynb
 
@@ -43,14 +48,14 @@ More details of this step can be found at: https://github.com/eutiagovski/amex-d
 The metrics i'm using for this competitions is ofical metric, available in https://www.kaggle.com/competitions/amex-default-prediction/overview/evaluation
 
 ### Comparison
-First i start modeling with 3 differents ML models that i use the most:
+First we start modeling with 3 differents ML Classifier models that we use the most.
+We will be using a mandatory binary for this task as it will be prevented default or non-default targets.
 
 ![image](https://user-images.githubusercontent.com/74082359/175933565-2499cb66-4d4a-4bdd-964d-fe0756bd8423.png)
 
 The result of AutoML follows below, and although the best result is Ensemble, I choose to use the algorithm xgboost, which I am already used to working:
 
 ![image](https://user-images.githubusercontent.com/74082359/175653368-076aed0d-2d2b-4f70-a395-7878226e11ea.png)
-
 
 
 Learning Curves
@@ -73,7 +78,7 @@ Confusion Matrix
 The Confusion Matrix is calculated by the Rank search function. It displays the distribution of records in terms of their current classes and their predicted classes. This indicates the quality of the current model. 
 
 The matrix brings us an interesting conclusion: it is easier for our model to predict a non-default target. So we will be treating this information in the predictions
-![image](https://user-images.githubusercontent.com/74082359/175937882-c6b16715-44b8-4342-b1ac-61eef1dcfdd9.png)
+![image](https://user-images.githubusercontent.com/74082359/175942441-f82c3f28-9598-4cf3-831a-943a2e00df0b.png)
 
 Calibration
 

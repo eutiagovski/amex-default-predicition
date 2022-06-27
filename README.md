@@ -82,7 +82,8 @@ Confusion Matrix
 
 The Confusion Matrix is calculated by the Rank search function. It displays the distribution of records in terms of their current classes and their predicted classes. This indicates the quality of the current model. 
 
-The matrix brings us an interesting conclusion: it is easier for our model to predict a non-default target. So we will be treating this information in the predictions
+The matrix brings us an interesting conclusion: it is easier for our model to predict a non-default target. So we will be treating this information in the future
+
 ![image](https://user-images.githubusercontent.com/74082359/175942441-f82c3f28-9598-4cf3-831a-943a2e00df0b.png)
 
 Calibration
@@ -92,7 +93,7 @@ Finally, our final optimized model has a calibration curve that closely approxim
 ![image](https://user-images.githubusercontent.com/74082359/175931510-f6c5c7de-bc38-49ef-83f6-8cfa1a09a329.png)
 
 
-And now we are able to make the first predicts:
+And now we are able to make the first predicts!
 
 More details of this step can be found at: https://github.com/eutiagovski/amex-default-predicition/blob/main/model-selection/Amex_Default_Model_Selection.ipynb
 

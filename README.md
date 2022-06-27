@@ -12,7 +12,7 @@ The objective of this competition is to predict the probability that a customer 
 ### Datasets
 The datasets was provided by the host of the competition, and can be downloaded from https://www.kaggle.com/competitions/amex-default-prediction/data.
 
-The dataset contains aggregated profile features for each customer at each statement date. Features are anonymized and normalized, and fall into the following general categories
+It contains aggregated profile features for each customer at each statement date. Features are anonymized and normalized, and fall into the following general categories
 
 ### Task
 The task is to predict, for each customer_ID, the probability of a future payment default.
@@ -20,20 +20,24 @@ Target: Did the customer default? (Yes=1/Positive, No=0/Negative)
 
 
 ## Exploratory Data Analysis
-More detais of this step can be found at: https://github.com/eutiagovski/amex-default-predicition/blob/main/data-exploring/Amex_Default_Data_Exploring.ipynb
 
-Distribution of target classes is highly imbalanced, non-defaults far outnumber defaults. This is common in these datasets since most people pay credit cards on time (assuming there isn’t an economic crisis).
+We will start by looking for the distribution of target. As we can see,  classes are not highly imbalanced. Non-defaults is not too far outnumber defaults. This is not common in these datasets since most people pay credit cards on time (assuming there isn’t an economic crisis).
 ![image](https://user-images.githubusercontent.com/74082359/175775987-a2dd7449-0592-417e-8dac-4320bb2de0c6.png)
 
+In this scenario, we have expenses, payments, balance, risk and delinquency variables distributed in numerical and categorical variables.
+We will be calculating the difference of days between each statement, stating by count how many different statements we have for each unique id.
 
+More detais of this step can be found at: https://github.com/eutiagovski/amex-default-predicition/blob/main/data-exploring/Amex_Default_Data_Exploring.ipynb
 
 ## Data Pre Processing
+
+In order to reduce even more the size of the datasets, we'll be encoding the customer_id and numericals columns.
+
+To facilitate validation of the initial model, we will be splitting the data into equal parts and training each chunk on a different model and comparing their results.
+
 More details of this step can be found at: https://github.com/eutiagovski/amex-default-predicition/blob/main/data-preprocess/Amex_Default_Data_PreProcess.ipynb
 
-
-
 ## Modeling
-More details of this step can be found at: https://github.com/eutiagovski/amex-default-predicition/blob/main/model-selection/Amex_Default_Model_Selection.ipynb
 
 ### Metrics
 The metrics i'm using for this competitions is ofical metric, available in https://www.kaggle.com/competitions/amex-default-prediction/overview/evaluation
@@ -58,6 +62,7 @@ What follows below shows us that the selected model had a high ability to adapt 
 Top features
 
 Since we've made features engine, we can perform a validation of the best attributes in search of those that offer the best modeling conditions we need for optimization.
+
 As we can see, the calculated variables had great importance in the model learning context.
 
 ![image](https://user-images.githubusercontent.com/74082359/175931253-53ed94c8-a8c7-4e53-805d-b911b91dcf02.png)
@@ -66,8 +71,9 @@ As we can see, the calculated variables had great importance in the model learni
 Confusion Matrix
 
 The Confusion Matrix is calculated by the Rank search function. It displays the distribution of records in terms of their current classes and their predicted classes. This indicates the quality of the current model. 
+
 The matrix brings us an interesting conclusion: it is easier for our model to predict a non-default target. So we will be treating this information in the predictions
-![image](https://user-images.githubusercontent.com/74082359/175931302-c581a9bd-609c-42e7-bd4a-252d26d9cef0.png)
+![image](https://user-images.githubusercontent.com/74082359/175937882-c6b16715-44b8-4342-b1ac-61eef1dcfdd9.png)
 
 Calibration
 
@@ -77,6 +83,9 @@ Finally, our final optimized model has a calibration curve that closely approxim
 
 
 And now we are able to make the first predicts:
+
+More details of this step can be found at: https://github.com/eutiagovski/amex-default-predicition/blob/main/model-selection/Amex_Default_Model_Selection.ipynb
+
 
 ## Predicting
 More details of this step can be found at: https://github.com/eutiagovski/amex-default-predicition/blob/main/final-model/Amex_Default_Final_Model.ipynb
